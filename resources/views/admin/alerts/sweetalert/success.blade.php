@@ -1,0 +1,13 @@
+@if(session('swal-success'))
+
+    <script>
+        $(document).ready(function (){
+            Swal.fire({
+                icon: 'success',
+                title: 'موفق',
+                text: '{{session('swal-success')}}',
+                confirmButtonText : 'باشه'
+            })
+        })
+    </script>
+@endif
