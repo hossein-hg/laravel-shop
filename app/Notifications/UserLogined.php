@@ -7,9 +7,10 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class UserLogined extends Notification
+class UserLogined extends Notification implements ShouldQueue
 {
     use Queueable;
+    
 
     /**
      * Create a new notification instance.

@@ -80,7 +80,7 @@ class LoginRegisterController extends Controller
 
         }
         elseif($type == 1){
-
+            
             $user->notify(new UserLogined($otp_code));
         }
 
